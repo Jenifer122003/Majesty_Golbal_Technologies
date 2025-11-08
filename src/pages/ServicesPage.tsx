@@ -89,7 +89,8 @@ function ServicesPage({ onNavigate }: ServicesPageProps) {
               </div>
             </div>
 
-            <div className="relative">
+            <div  className="relative cursor-pointer"
+  onClick={() =>  onNavigate('talent')}>
               <div className="md:flex md:items-center md:space-x-8">
                 <div className="md:w-1/2 md:text-right">
                   <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition">
@@ -170,18 +171,6 @@ function ServicesPage({ onNavigate }: ServicesPageProps) {
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="mt-16 text-center">
-          <button
-            onClick={() => {
-              onNavigate('talent');
-              window.scrollTo({ top: 0, behavior: 'smooth' });
-            }}
-            className="inline-flex items-center space-x-2 bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition shadow-lg hover:shadow-xl"
-          >
-            <span className="text-lg font-semibold">Learn About Our Talent Solutions</span>
-          </button>
         </div>
       </main>
 
